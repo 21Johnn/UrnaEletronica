@@ -1,0 +1,181 @@
+@keyframes pisca {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; } 
+    100% {opacity: 0.2; }
+}
+
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.urna{
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.screen{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.d-1{
+    flex: 1;
+    display: flex;
+}
+
+.d1-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+
+.d1-1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.d1-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d1-3{
+    height: 50px;
+
+}
+
+.number{
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.d1-4{
+    flex: 1;
+    line-height: 30px;
+
+}
+
+.d1-right{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.d1-image{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    font-size: 13px;
+    
+}
+
+.d1-image img {
+    width: 100%;
+}
+
+.d1-image.small{
+    width: 60%;
+    font-size: 65%;
+}
+
+.d-2{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid black;
+    padding-left: 10px;
+
+}
+
+.keyboard{
+    background-color: #403a3a;
+    margin-left: 30px;
+}
+
+.keyboard-line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.keyboard--button{
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #555;
+}
+
+.white-button{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.clear-button{
+    background-color: #f09046;
+    color: black;
+    font-size: 15px;
+
+}
+
+.confirm-button{
+    background-color: #48c709;
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.aviso-grande{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.aviso-extra{
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
